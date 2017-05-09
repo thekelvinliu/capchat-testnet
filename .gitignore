@@ -1,3 +1,9 @@
+# geth datadir
 chain
+
+# generated json
 genesis.json
 wallets.json
+
+# commands
+start.sh
