@@ -22,6 +22,8 @@ $ geth \
   --shh \
   --rpc --rpcaddr 0.0.0.0 --rpcport 8888 --rpccorsdomain "*" --rpcapi eth,web3,net,shh
 ```
+mining is necessary for transactions to happen.
+this is just a private testnet, so it doesn't make sense to continually mine -- it'll just waste space.
 
 ## about
 capchat is my computer science capstone/senior project.
