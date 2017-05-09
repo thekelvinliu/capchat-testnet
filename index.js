@@ -18,8 +18,8 @@ const walletsPath = path.join(__dirname, 'wallets.json');
 const wallets = [...Array(NUM_ACCOUNTS)]
   // random wallets
   .map(() => Wallet.createRandom({}))
-  // extract address and mnemonic
-  .map(({ address, mnemonic }) => ({ address, mnemonic }));
+  // extract address, mnemonic, and privateKey
+  .map(({ address, mnemonic, privateKey }) => ({ address, mnemonic, privateKey }));
 
 // write wallets
 jsonfile.writeFile(walletsPath, wallets, { spaces: 2 }, err => {
