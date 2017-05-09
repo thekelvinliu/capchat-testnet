@@ -17,6 +17,7 @@ $ geth --datadir path/to/chain init genesis.json
 $ geth \
   --datadir path/to/chain \
   --networkid <genesis.config.chainId> \
+  --mine --minerthreads 1 --etherbase <genesis.alloc.some-account> \
   --nodiscover \
   --shh \
   --rpc --rpcaddr 0.0.0.0 --rpcport 8888 --rpccorsdomain "*" --rpcapi eth,web3,net,shh
