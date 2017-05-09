@@ -33,7 +33,7 @@ jsonfile.writeFile(walletsPath, wallets, { spaces: 2 }, err => {
 // allocated ether
 const alloc = wallets.reduce((acc, val, ind) => {
   acc[val.address] = {
-    balance: '1000000'
+    balance: '1000000000000000000000000'
   };
   return acc;
 }, {});
